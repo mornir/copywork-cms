@@ -38,7 +38,7 @@ export default {
       },
     },
     {
-      title: 'Main Color',
+      title: 'Primary color',
       name: 'color',
       type: 'string',
       validation: Rule => Rule.regex(/^#\S{6}$/, 'Not a valid HEX code'),
@@ -54,7 +54,7 @@ export default {
       type: 'url',
     },
     {
-      title: 'CodePen',
+      title: 'CodePen hashid',
       name: 'codepen',
       type: 'string',
     },
