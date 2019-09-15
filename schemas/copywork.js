@@ -54,6 +54,11 @@ export default {
       type: 'url',
     },
     {
+      title: "Video of copied page",
+      name: "muxVideo",
+      type: "mux.video"
+    },
+    {
       title: 'CodePen hashid',
       name: 'codepen',
       type: 'string',
