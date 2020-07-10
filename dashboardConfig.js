@@ -7,12 +7,11 @@ export default {
         height: 'medium',
       },
       options: {
-        title: 'Webseite neu generieren',
-        description:
-          'Nach Anpassungen muss die Seite neu aufgebaut werden, damit alle neuen Inhalte angezeigt werden. Dauert ca. 2 Minuten.',
+        title: 'Rebuild',
+        description: 'Trigger a rebuild of the website',
         sites: [
           {
-            buildHookId: '5e78bffc9e337d02228afa59',
+            buildHookId: '5e78bffc9e337d02228afa59?Sanity+use_cache',
             title: 'https://copywork.netlify.com',
             name: 'copywork',
             apiId: 'eeec1609-923c-4ac8-9822-a4661b2c8953',
