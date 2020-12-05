@@ -7,7 +7,7 @@ export default {
       title: 'Title',
       name: 'title',
       type: 'string',
-      validation: Rule => Rule.required(),
+      validation: (Rule) => Rule.required(),
     },
     {
       title: 'Slug',
@@ -16,18 +16,14 @@ export default {
       options: {
         source: 'title',
         maxLength: 200, // will be ignored if slugify is set
-        slugify: input =>
-          input
-            .toLowerCase()
-            .replace(/\s+/g, '-')
-            .slice(0, 200),
+        auto: true,
       },
     },
     {
       title: 'Month and Year',
       name: 'date',
       type: 'datetime',
-      validation: Rule => Rule.required(),
+      validation: (Rule) => Rule.required(),
     },
     {
       title: 'Logo',
@@ -41,7 +37,7 @@ export default {
       title: 'Primary color',
       name: 'color',
       type: 'string',
-      validation: Rule => Rule.regex(/^#\S{6}$/, 'Not a valid HEX code'),
+      validation: (Rule) => Rule.regex(/^#\S{6}$/, 'Not a valid HEX code'),
     },
     {
       title: 'ULR of copied page',
@@ -54,9 +50,9 @@ export default {
       type: 'url',
     },
     {
-      title: "Video of copied page",
-      name: "muxVideo",
-      type: "mux.video"
+      title: 'Video of copied page',
+      name: 'muxVideo',
+      type: 'mux.video',
     },
     {
       title: 'CodePen hashid',
